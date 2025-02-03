@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriFit Academy - Comunidade</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="wp-wrapper">
+        <img src="./assets/whatsapp.png" alt="whatsapp icon">
+    </div>
+    <header>
+        <div>
+            <img src="assets/Logo.png" alt="Logo" class="logo" />
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="comunidade.html">Comunidade</a>
+        </nav>
+        <button class="contact-button">Fale conosco<span>➔</span></button>
+    </header>
+    <br>
+    <!-- SEÇÃO COMUNIDADE -->
+    <section id="comunidade">
+        <h2>Comunidade</h2>
+        <p>Bem-vindo à nossa comunidade! Compartilhe informações, faça perguntas e interaja com outros profissionais da
+            área.</p>
+
+        <!-- Fórum -->
+        <div id="forum">
+            <div id="post-form">
+                <textarea id="post-content" rows="4" placeholder="Digite sua postagem"></textarea>
+                <button onclick="postar()">Postar</button>
+            </div>
+
+            <div id="posts-container"></div>
+        </div>
+    </section>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

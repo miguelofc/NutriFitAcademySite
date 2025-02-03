@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriFit Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wp-wrapper">
+    <img src="./assets/whatsapp.png" alt="whatsapp icon">
+  </div>
+  <header>
+    <div>
+      <img src="assets/Logo.png" alt="Logo" class="logo" />
+    </div>
+
+    <nav id="home">
+      <a href="#home">Home</a>
+      <a href="#nossos-servicos">Serviços</a>
+      <a href="#sobre-nos">Sobre nós</a>
+      <a href="comunidade.html">Comunidade</a>
+      <a href="#contato">Fale conosco</a>
+    </nav>
+    <button class="login-button"><a href="login.html">Login</a><span>➔</span></button>
+  </header>
+
+  <div class="banner">
+    <img src="assets/Banner.png" alt="Banner Image" />
+  </div>
+
+  <!-- SEÇÃO NOSSOS SERVICOS -->
+  <section id="nossos-servicos">
+    <h2>Nossos Serviços</h2>
+
+    <div class="cards-wrapper">
+      <div class="container-verde">
+        <h3>Avaliação Física</h3>
+        <span>Uma análise completa da sua condição física atual para estabelecer
+          metas de condicionamento.</span>
+      </div>
+      <div class="container-verde">
+        <h3>Orientação Nutricional</h3>
+        <span>Um plano de alimentação personalizado para atingir objetivos de
+          saúde e peso.</span>
+      </div>
+      <div class="container-verde">
+        <h3>Plano de Treino Personalizado</h3>
+        <span>Exercícios sob medida para você, com foco em metas específicas de
+          condicionamento físico.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SOBRE NÓS -->
+  <section id="sobre-nos" class="section-sobre-nos">
+    <div class="sobre-nos-container">
+      <div class="sobre-nos-text">
+        <h2 class="sobre-nos-title" id="ler-mais-titulo">SOBRE NÓS</h2>
+        <h1 class="sobre-nos-sub">Promovendo o Equilíbrio para uma Vida Saudável</h1>
+        <p id="paragrafo-curto">
+          Na Nutri Fit Academy, não apenas abraçamos a paixão pela saúde, condicionamento físico e bem-estar;
+          estamos empenhados em construir uma comunidade dedicada a impulsionar você em direção a metas alcançáveis
+          e sustentáveis.
+        </p>
+        <div id="paragrafo-longo" style="display: none;">
+          <h3 class="sobre-nos-sub-sec">Nossa Missão: Integrando Nutrição e Exercício para uma Vida Plena</h3>
+          <p>
+            Estamos aqui para promover um estilo de vida ativo e equilibrado, onde a nutrição e o exercício convergem
+            para forjar um corpo saudável e uma mente equilibrada. Reconhecemos a singularidade de cada indivíduo, e
+            é por isso que oferecemos serviços personalizados, moldados para atender às suas necessidades específicas.
+          </p>
+          <h3 class="sobre-nos-sub-sec">Guiando Sua Jornada com Especialistas Dedicados</h3>
+          <p>
+            Conte com nossa equipe altamente qualificada, composta por nutricionistas, personal trainers e
+            especialistas em saúde, prontos para guiá-lo em cada passo da sua jornada. Juntos, alcançaremos um
+            equilíbrio duradouro para uma vida mais saudável e plena.
+          </p>
+        </div>
+        <button class="ler-mais-btn" onclick="toggleTexto()">Ler Mais</button>
+      </div>
+      <div class="sobre-nos-images1">
+        <img src="assets/Sobre-nos-1.png" alt="Imagem 1" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SEÇÃO CONTATO -->
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form id="contact-form">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit" class="contact-button">Enviar</button>
+    </form>
+
+
+    <div id="success-message" style="display: none;">
+      <p>Mensagem enviada com sucesso!</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="logo-container">
+        <img src="assets/Logo.png" alt="Logo" class="logo" />
+        <p class="slogan-text">Sua Inspiração Diária para uma Vida Ativa e Nutritiva.</p>
+      </div>
+
+      <div class="download-section">
+        <a href="link-para-google-play" target="_blank">
+          <img src="assets/play-store.png" alt="Download on Google Play" />
+        </a>
+        <br />
+        <a href="link-para-app-store" target="_blank">
+          <img src="assets/app-store.png" alt="Download on the App Store" />
+        </a>
+      </div>
+
+      <div class="footer-buttons">
+        <button>Central de Ajuda</button>
+        <br />
+        <button>Reporte um Erro</button>
+        <br />
+        <button>Encontre um Profissional</button>
+      </div>
+
+      <div class="social-media">
+        <!-- Adicione links reais para suas redes sociais -->
+        <a href="#" target="_blank"><img src="assets/facebook.png" alt="Facebook" /></a>
+        <a href="#" target="_blank"><img src="assets/whatsapp.png" alt="Whatsapp" /></a>
+        <a href="#" target="_blank"><img src="assets/instagram.png" alt="Instagram" /></a>
+      </div>
+    </div>
+
+    <hr class="footer-line" />
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <p>&copy; 2023 Pro Developers Academy | Todos os direitos reservados</p>
+      </div>
+      <div class="footer-bottom-right">
+        <a href="#">Termos e Condições</a>
+        <span>|</span>
+        <a href="#">Políticas de Privacidade</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

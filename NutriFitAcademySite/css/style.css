@@ -1,0 +1,388 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.wp-wrapper {
+  position: fixed;
+  cursor: pointer;
+  z-index: 20;
+  display: flex;
+  background-color: transparent;
+  height: 60px;
+  width: 60px;
+
+  right: 20px;
+  bottom: 20px;
+}
+
+
+
+header {
+  background-color: #ffffff;
+  color: #333;
+  padding: 0px 20px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  width: 110px;
+  margin-top: 15px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: #2c2c2c;
+  text-decoration: none;
+  padding: 15px;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0e0e0e;
+}
+
+.login-button {
+  background-color: #ffffff;
+  color: #333;
+  padding: 10px 10px;
+  margin-right: 40px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.login-button:hover {
+  background-color: linear-gradient(180deg, #0eff00, #0a5d00);
+  color: #fff;
+}
+
+.login-button:hover a {
+  color: #fff;
+}
+
+.login-button span {
+  margin-left: 10px;
+}
+
+.banner {
+  margin-top: 80px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* SEÇÃO NOSSOS SERVICOS */
+#nossos-servicos {
+  padding: 80px;
+}
+
+#nossos-servicos h2 {
+  margin-top: 16px;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 14px;
+}
+
+.container-verde {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 340px;
+  border-radius: 20px;
+
+  background-image: linear-gradient(180deg, #0eff00, #0a5d00);
+  padding: 20px;
+  color: white;
+}
+
+.container-verde h3 {
+  font-size: 30px;
+}
+
+.container-verde span {
+  font-size: 20px;
+}
+
+/* SEÇÃO SOBRE NÓS */
+
+.section-sobre-nos {
+  background-color: #ffffff;
+  padding: 80px;
+}
+
+.sobre-nos-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sobre-nos-text {
+  width: 50%;
+}
+
+.sobre-nos-title {
+  color: #454545;
+  font-size: 18px;
+  margin-bottom: -20px;
+}
+
+.sobre-nos-sub {
+  color: #000;
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+
+.sobre-nos-sub-sec {
+  color: #000;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.sobre-nos-images1,
+.sobre-nos-images2 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.sobre-nos-images1 img,
+.sobre-nos-images2 img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  margin-bottom: 10px;
+}
+
+/* SEÇÃO CONTATO */
+#contato {
+  margin-top: 50px;
+  background-color: #f7f7f7;
+  padding: 80px;
+  text-align: center;
+}
+
+#contato h2 {
+  margin-bottom: 30px;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact-form button {
+  background-color: #0a5d00;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+  background-color: #084100;
+}
+
+#success-message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  display: none;
+}
+
+/* SEÇÃO COMUNIDADE */
+#comunidade {
+  background-color: #ffffff;
+  padding: 80px;
+  text-align: center;
+}
+
+#comunidade h2 {
+  margin-bottom: 30px;
+  color: #0a5d00;
+}
+
+#comunidade p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* FÓRUM */
+#forum {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#post-form {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #0a5d00;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #084100;
+}
+
+.post {
+  background-color: #f7f7f7;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.comment-section {
+  margin-top: 10px;
+}
+
+.comment-content {
+  width: calc(100% - 80px);
+  margin-bottom: 10px;
+}
+
+.comment {
+  background-color: #eaeaea;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #ffffff;
+  padding: 0px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.logo-container img{
+  width: 130px;
+  height: auto;
+  margin-bottom: -35px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slogan-text{
+  font-size: 12px;
+}
+
+.download-section img {
+  width: 150px;
+  margin-top: 10px;
+  margin-left: -20px;
+}
+
+.footer-buttons button {
+  background-color: #0a5d00;
+  color: white;
+  width: 190px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.social-media img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+.footer-line {
+  border: 0.5px solid #ccc;
+  margin: 10px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom-left p {
+  font-size: 14px; 
+  color: #555; 
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-bottom-right a {
+  font-size: 14px; 
+  text-decoration: none;
+  color: #555;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-bottom-right span {
+  margin: 0 5px;
+}
